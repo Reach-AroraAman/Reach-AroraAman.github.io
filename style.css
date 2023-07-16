@@ -90,11 +90,13 @@ a {
 /* Additional stylings */
 img {
   max-width: 100%;
+  height: auto;
 }
 
 .logo {
-  max-width: 150px;
+  width: 70%;
   margin-bottom: 10px;
+  max-width: 150px;
 }
 
 /* Add more styles based on your design preferences */
