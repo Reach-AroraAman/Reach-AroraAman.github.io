@@ -4,14 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Resilient Beings</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
+    <img src="logo.png" alt="Resilient Beings Logo">
     <h1>Resilient Beings</h1>
     <h2>Aman Arora - The Resilient Child</h2>
   </header>
-
+  
   <nav>
     <ul>
       <li><a href="#about">About</a></li>
@@ -20,7 +21,7 @@
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
-
+  
   <section id="about">
     <h2>About</h2>
     <p>
@@ -30,8 +31,9 @@
       I've trained under the Ido Portal method for half a decade and have gained knowledge in human psychology, physiology, and biomechanics. My journey has led me to become a mentor myself, taking inspiration from everything and everyone around me while practicing and teaching Yoga.
     </p>
     <p>Stay tuned for more and keep moving!</p>
+    <img src="about-image.jpg" alt="About Image">
   </section>
-
+  
   <section id="services">
     <h2>Services</h2>
     <ul>
@@ -39,7 +41,7 @@
       <li>Group Lessons (In-person and Virtual)</li>
     </ul>
   </section>
-
+  
   <section id="certifications">
     <h2>Certifications</h2>
     <ul>
@@ -56,42 +58,16 @@
       <li>Movement Camp 2018 and 2019</li>
     </ul>
   </section>
-
+  
   <section id="contact">
     <h2>Contact</h2>
     <ul>
       <li>Email: reach.aroraaman@gmail.com</li>
       <li>Phone: +13435973979</li>
-      <li>Instagram: <a href="https://www.instagram.com/resilient.beings.ca">resilient.beings.ca</a></li>
-      <li>Instagram: <a href="https://www.instagram.com/reach.aroraaman">reach.aroraaman</a></li>
-      <li>Facebook: <a href="https://www.facebook.com/profile.php?id=100090510193741">Aman Arora on Facebook</a></li>
+      <li>Instagram: <a href="https://www.instagram.com/resilient.beings.ca"><img src="instagram-icon.png" alt="Instagram"></a></li>
+      <li>Instagram: <a href="https://www.instagram.com/reach.aroraaman"><img src="instagram-icon.png" alt="Instagram"></a></li>
+      <li>Facebook: <a href="https://www.facebook.com/profile.php?id=100090510193741"><img src="facebook-icon.png" alt="Facebook"></a></li>
     </ul>
-
-    <h2>Instagram Gallery</h2>
-    <div id="instafeed-gallery" class="gallery"></div>
   </section>
-
-  <script>
-    // Load Instagram feed into gallery
-    fetch('https://www.instagram.com/reach.aroraaman/?__a=1')
-      .then(response => response.json())
-      .then(data => {
-        const posts = data.graphql.user.edge_owner_to_timeline_media.edges;
-        const gallery = document.getElementById('instafeed-gallery');
-
-        posts.forEach(post => {
-          const imageUrl = post.node.thumbnail_resources[2].src;
-          const link = `https://www.instagram.com/p/${post.node.shortcode}`;
-          const image = document.createElement('img');
-          image.src = imageUrl;
-          const anchor = document.createElement('a');
-          anchor.href = link;
-          anchor.target = '_blank';
-          anchor.appendChild(image);
-          gallery.appendChild(anchor);
-        });
-      })
-      .catch(error => console.error(error));
-  </script>
 </body>
 </html>
