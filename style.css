@@ -1,3 +1,4 @@
+/* Add modern styling */
 body {
   font-family: Arial, sans-serif;
   background-color: #f5f5f5;
@@ -66,3 +67,26 @@ section#contact ul li a {
 a {
   color: #337ab7;
 }
+
+/* Add responsive styles */
+@media screen and (max-width: 768px) {
+  header {
+    padding: 10px;
+  }
+  
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+  
+  section {
+    margin: 10px;
+  }
+}
+
+/* Additional stylings */
+img {
+  max-width: 100%;
+}
+
+/* Add more styles based on your design preferences */
