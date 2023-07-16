@@ -94,9 +94,10 @@ img {
 }
 
 .logo {
-  width: 70%;
+  width: 30%;
   margin-bottom: 10px;
   max-width: 300px;
+  transform: scale(0.7);
 }
 
 /* Add more styles based on your design preferences */
