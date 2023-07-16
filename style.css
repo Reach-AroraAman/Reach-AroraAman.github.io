@@ -1,12 +1,13 @@
-/* Add modern styling */
+/* General Styles */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f5f5f5;
-  color: #333;
+  font-family: "Arial", sans-serif;
+  background-color: #ffffff;
+  color: #555555; /* Contrasting color for better readability */
   margin: 0;
   padding: 0;
 }
 
+/* Header Styles */
 header {
   background-color: #222;
   color: #fff;
@@ -17,10 +18,12 @@ header {
   align-items: center;
 }
 
-h1, h2 {
+header h1,
+header h2 {
   margin-bottom: 10px;
 }
 
+/* Navigation Styles */
 nav {
   margin-top: 20px;
   text-align: center;
@@ -40,6 +43,7 @@ nav ul li a {
   text-decoration: none;
 }
 
+/* Section Styles */
 section {
   margin: 20px;
 }
@@ -67,11 +71,7 @@ section#contact ul li a {
   text-decoration: none;
 }
 
-a {
-  color: #337ab7;
-}
-
-/* Add responsive styles */
+/* Responsive Styles */
 @media screen and (max-width: 768px) {
   header {
     padding: 10px;
@@ -87,16 +87,18 @@ a {
   }
 }
 
-/* Additional stylings */
+/* Additional Styles */
 img {
   max-width: 100%;
   height: auto;
 }
 
 .logo {
-  width: 30%;
+  width: 20px;
+  height: 20px;
   margin-bottom: 10px;
   max-width: 300px;
+  border-radius: 50%; /* Circular-shaped cropping */
   transform: scale(0.7);
 }
 
