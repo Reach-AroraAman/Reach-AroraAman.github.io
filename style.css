@@ -1,7 +1,7 @@
 /* styles.css */
 
 /* Reset default browser styles */
-body, h1, h2, h3, h4, h5, h6, p, ul, li {
+body, p, ul, li {
   margin: 0;
   padding: 0;
 }
@@ -10,17 +10,6 @@ body {
   font-family: Arial, sans-serif;
   background-color: #f9f9f9;
   color: #333;
-}
-
-header {
-  background-color: #fff;
-  padding: 20px;
-  text-align: center;
-}
-
-.logo {
-  width: 100px; /* Adjust size as needed */
-  height: auto;
 }
 
 h1 {
@@ -34,6 +23,10 @@ h2 {
   color: #888;
 }
 
+h3, h4, h5, h6 {
+  margin-top: 10px;
+}
+
 nav {
   background-color: #f9f9f9;
   padding: 10px;
@@ -45,7 +38,7 @@ nav ul {
 }
 
 nav ul li {
-  display: inline;
+  display: inline-block;
   margin: 0 10px;
 }
 
