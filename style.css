@@ -14,8 +14,7 @@ header {
   padding: 20px;
   text-align: center;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  align-items: center; /* Vertically align items */
 }
 
 header h1,
@@ -23,24 +22,12 @@ header h2 {
   margin-bottom: 10px;
 }
 
-/* Navigation Styles */
-nav {
-  margin-top: 20px;
-  text-align: center;
-}
-
-nav ul {
-  list-style: none;
-}
-
-nav ul li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-nav ul li a {
-  color: #333;
-  text-decoration: none;
+.logo {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px; /* Added margin to create space between logo and heading */
+  border-radius: 50%; /* Circular-shaped cropping */
+  transform: scale(0.7);
 }
 
 /* Section Styles */
@@ -52,54 +39,13 @@ section h2 {
   margin-bottom: 10px;
 }
 
-section ul {
-  list-style: disc;
-  margin-left: 20px;
-}
-
-section ul li {
-  margin-bottom: 5px;
-}
-
-section#contact ul {
-  list-style: none;
-  margin-left: 0;
-}
-
-section#contact ul li a {
-  color: #333;
-  text-decoration: none;
+.about-image {
+  width: 50px; /* Set the width to 50 pixels */
+  height: auto; /* Maintain aspect ratio */
 }
 
 /* Responsive Styles */
-@media screen and (max-width: 768px) {
-  header {
-    padding: 10px;
-  }
-  
-  nav ul li {
-    display: block;
-    margin: 10px 0;
-  }
-  
-  section {
-    margin: 10px;
-  }
-}
+/* Add responsive styles as needed */
 
 /* Additional Styles */
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-.logo {
-  width: 20px;
-  height: 20px;
-  margin-bottom: 10px;
-  max-width: 300px;
-  border-radius: 50%; /* Circular-shaped cropping */
-  transform: scale(0.7);
-}
-
 /* Add more styles based on your design preferences */
