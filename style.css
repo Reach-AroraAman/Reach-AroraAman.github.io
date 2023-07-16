@@ -12,6 +12,9 @@ header {
   color: #fff;
   padding: 20px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 h1, h2 {
@@ -87,6 +90,11 @@ a {
 /* Additional stylings */
 img {
   max-width: 100%;
+}
+
+.logo {
+  max-width: 150px;
+  margin-bottom: 10px;
 }
 
 /* Add more styles based on your design preferences */
