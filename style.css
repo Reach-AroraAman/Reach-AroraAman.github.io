@@ -1,51 +1,105 @@
-/* General Styles */
-body {
-  font-family: "Arial", sans-serif;
-  background-color: #ffffff;
-  color: #555555; /* Contrasting color for better readability */
+/* styles.css */
+
+/* Reset default browser styles */
+body, h1, h2, h3, h4, h5, h6, p, ul, li {
   margin: 0;
   padding: 0;
 }
 
-/* Header Styles */
-header {
-  background-color: #222;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-  display: flex;
-  align-items: center; /* Vertically align items */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
 }
 
-header h1,
-header h2 {
-  margin-bottom: 10px;
+header {
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
 }
 
 .logo {
-  width: 20px;
-  height: 20px;
-  margin-right: 10px; /* Added margin to create space between logo and heading */
-  border-radius: 50%; /* Circular-shaped cropping */
-  transform: scale(0.7);
+  width: 100px; /* Adjust size as needed */
+  height: auto;
 }
 
-/* Section Styles */
+h1 {
+  font-size: 28px;
+  margin-top: 10px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-top: 10px;
+  color: #888;
+}
+
+nav {
+  background-color: #f9f9f9;
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #555;
+}
+
 section {
-  margin: 20px;
-}
-
-section h2 {
-  margin-bottom: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #fff;
 }
 
 .about-image {
-  width: 50px; /* Set the width to 50 pixels */
-  height: auto; /* Maintain aspect ratio */
+  max-width: 100%; /* Ensure the image fits within the container */
+  height: auto;
+  margin-top: 20px;
 }
 
-/* Responsive Styles */
-/* Add responsive styles as needed */
+.services ul {
+  list-style-type: square;
+  margin-left: 20px;
+}
 
-/* Additional Styles */
-/* Add more styles based on your design preferences */
+.contact ul li {
+  margin-bottom: 10px;
+}
+
+.contact a {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.contact a img {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .about-image {
+    margin-top: 10px;
+  }
+}
+
+/* Additional styles can be added as needed */
